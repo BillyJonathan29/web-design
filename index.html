@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="lg:mx-28">
+      <header
+        class="bg-transparent absolute left-0 top-0 w-full flex items-center z-10"
+      >
+        <div class="container">
+          <div class="flex items-center justify-between relative">
+            <div class="px-4">
+              <a
+                href="/index.html"
+                class="font-bold text-lg text-primary block py-6"
+                ><span class="text-cyan-500">E-</span>Code</a
+              >
+            </div>
+            <div class="flex items-center px-4">
+              <button
+                id="hamburger"
+                name="hamburger"
+                type="button"
+                class="block absolute right-4 lg:hidden"
+              >
+                <span
+                  class="hamburger-icons bg-dark transition duration-300 ease-in-out origin-top-left"
+                ></span>
+                <span
+                  class="hamburger-icons bg-dark transition duration-300 ease-in-out"
+                ></span>
+                <span
+                  class="hamburger-icons bg-dark transition duration-300 ease-in-out origin-bottom-left"
+                ></span>
+              </button>
+
+              <nav
+                id="nav-menu"
+                class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none"
+              >
+                <ul class="block lg:flex">
+                  <li class="group">
+                    <a
+                      href="/index.html"
+                      class="text-base text-dark py-2 mx-8 group-hover:text-primary flex"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="group">
+                    <a
+                      href="/e-learning.html"
+                      class="text-base text-dark py-2 mx-8 group-hover:text-primary flex"
+                      >E-Learning</a
+                    >
+                  </li>
+                  <li class="group">
+                    <a
+                      href="/contact.html"
+                      class="text-base text-dark py-2 mx-8 group-hover:text-primary flex"
+                      >Contact</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+    <!-- navbar end -->
+
+    <!-- Head -->
+    <section class="lg:mt-32 bg-cover bg-center bg-no-repeat cover center">
+      <div
+        class="lg:mt-32 mt-24 gap-14 justify-center flex flex-wrap items-center px-6 lg:px-20"
+      >
+        <div class="w-full self-center lg:w-1/2 text-zinc-950">
+          <h1 class="text-2xl font-semibold md:text-xl lg:text-2xl">E-Code</h1>
+          <h2 class="font-medium text-lg mb-4 mt-2 lg:text-xl">
+            Efecctive Learning Online Platform For Everyone
+          </h2>
+          <p class="font-medium leading-relaxed mb-8 text-zinc-950 lg:text-lg">
+            Sebuah platform pembelajaran online yang dirancang dengan baik untuk
+            memastikan setiaporang bisa belajar secara efektif,kapan pun,dimana
+            pun mereka mau.
+          </p>
+          <a
+            href="/index.html"
+            class="text-base font-semibold text-white bg-cyan-500 py-3 px-8 rounded-full hover:shadow-lg hover:bg-primary hover:text-white transition duration-300 ease-in-out"
+          >
+            Lihat Selengkapnya
+          </a>
+        </div>
+        <div class="hidden lg:block lg:w-1/3 lg:pl-10">
+          <img
+            src="/assets/img/home.png"
+            alt="E-Learning Illustration"
+            class="w-full mx-auto lg:ml-auto"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- End Head -->
+
+    <!-- Content -->
+    <div class="bg-gray-50 py-16 px-4 md:px-8">
+      <h2
+        class="text-2xl lg:text-3xl font-bold text-gray-800 text-center mb-12"
+      >
+        Berbagai Program MySkill
+      </h2>
+
+      <div class="gap-8 lg:gap-16 md:grid-cols-2 items-center">
+        <div
+          class="flex flex-col md:flex-row items-center justify-center text-center md:text-left md:space-x-8 space-y-6 md:space-y-0"
+        >
+          <div class="flex-shrink-0 w-full md:w-auto">
+            <img
+              src="/assets/img/head-learning.png"
+              E-learning
+              alt="E-learning"
+              class="max-w-full w-full md:w-80"
+            />
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold text-gray-700 mb-4">E-learning</h3>
+            <p class="text-gray-600 mb-4 font-semibold text-sm">
+              Pelajari Ratusan Skill Sekali Bayar. Praktik dan Bersertifikat:
+            </p>
+            <ul class="text-left space-y-2 mb-6 text-sm">
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✔</span>
+                <span>
+                  Belajar fleksibel via Video Materi, Bahan Bacaan, Project, dan
+                  Studi Kasus
+                </span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✔</span>
+                <span>
+                  Praktikal & Actionable. Bertahap dari level Dasar hingga
+                  Lanjut
+                </span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✔</span>
+                <span>
+                  Grup Komunitas Diskusi Lifetime. Kelas Gratis Tiap Bulannya
+                </span>
+              </li>
+            </ul>
+            <button
+              class="bg-cyan-500 text-white px-4 py-2 rounded-lg text-lg hover:bg-cyan-600"
+            >
+              Lihat Ratusan Materi
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col-reverse md:flex-row items-center justify-center text-center md:text-left md:space-x-8 space-y-6 md:space-y-0"
+        >
+          <div>
+            <h3 class="text-xl font-semibold text-gray-700 mb-4">E-learning</h3>
+            <p class="text-gray-600 mb-4 font-semibold text-sm">
+              Pelajari Ratusan Skill Sekali Bayar. Praktik dan Bersertifikat:
+            </p>
+            <ul class="text-left space-y-2 mb-6 text-sm">
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✔</span>
+                <span>
+                  Belajar fleksibel via Video Materi, Bahan Bacaan, Project, dan
+                  Studi Kasus
+                </span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✔</span>
+                <span>
+                  Praktikal & Actionable. Bertahap dari level Dasar hingga
+                  Lanjut
+                </span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✔</span>
+                <span>
+                  Grup Komunitas Diskusi Lifetime. Kelas Gratis Tiap Bulannya
+                </span>
+              </li>
+            </ul>
+            <button
+              class="bg-cyan-500 text-white px-4 py-2 rounded-lg text-lg hover:bg-cyan-600"
+            >
+              Lihat Ratusan Materi
+            </button>
+          </div>
+
+          <div class="flex-shrink-0 w-full md:w-auto">
+            <img
+              src="/assets/img/head-meja.png"
+              E-learning
+              alt="E-learning"
+              class="max-w-full w-full md:w-80"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/src/js/script.js"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+  </body>
+</html>
