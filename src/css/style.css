@@ -27,3 +27,27 @@ body {
 .hamburger-active > span:nth-child(3) {
   @apply -rotate-45;
 }
+
+.hamburger-icons {
+  display: block;
+  width: 30px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #000;
+  margin: 5px;
+  margin-right: 25px;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  position: relative;
+}
+
+.hamburger-icons.line-top.active {
+  transform: rotate(45deg) translate(5px, 8px);
+}
+
+.hamburger-icons.line-middle.active {
+  opacity: 0; 
+}
+
+.hamburger-icons.line-bottom.active {
+  transform: rotate(-45deg) translate(5px, -8px); 
+}
