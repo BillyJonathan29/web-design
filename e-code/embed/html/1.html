@@ -6,9 +6,35 @@
     <title>E-Code | Materi</title>
     <link rel="stylesheet" href="/src/css/style.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.10/codemirror.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.10/theme/dracula.min.css"
+    />
+
+    <style>
+      /* Optional styling for the editor container */
+      .editor-container {
+        width: 100%;
+        margin: 20px auto;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      iframe {
+        width: 90%;
+        height: 300px;
+        border: 1px solid #ccc;
+        margin-top: 20px;
+      }
+    </style>
   </head>
+
   <body class="bg-gray-100 font-sans">
-         <!-- Navbar -->
+    <!-- Navbar -->
     <div class="lg:mx-28">
       <header
         class="bg-transparent left-0 lg:px-20 px-2 top-0 w-full flex items-center z-50 fixed"
@@ -68,10 +94,12 @@
         </div>
       </header>
     </div>
-    <!-- navbar end -->
+    <!-- Navbar end -->
 
     <!-- Main Content -->
-    <main class="flex lg:mt-24 flex-col px-8 lg:flex-row lg:px-28 py-10  gap-8 mt-10 overflow-hidden"">
+    <main
+      class="flex lg:mt-24 flex-col px-8 lg:flex-row lg:px-28 py-10 gap-8 mt-10 overflow-hidden"
+    >
       <!-- Video Section -->
       <div class="w-full lg:w-2/3 bg-white shadow-lg rounded-lg p-6">
         <div class="lg:h-[px-400px] h-[300px] rounded-lg">
@@ -96,26 +124,55 @@
           Dimulai dari "Apa itu HTML?".
         </p>
         <div class="mt-10">
-            <div class="flex items-start justify-end">
-              <div class="w-1/2">
-                <a
-                  href="/e-code/html-basic.html"
-                  class="bg-indigo-500 text-white rounded-lg lg:px-8 px-5 py-2"
-                  >Back...</a
-                >
-              </div>
-              <div class="w-1/2">
-                <a
-                  href="/e-code/embed/html/2.html"
-                  class="bg-indigo-500 text-white rounded-lg lg:px-8 px-5 py-2"
-                  >Selanjutnya...</a
-                >
-              </div>
+          <div class="flex items-start justify-end">
+            <div class="w-1/2">
+              <a
+                href="/e-code/html-basic.html"
+                class="bg-indigo-500 text-white rounded-lg lg:px-8 px-5 py-2"
+                >Back...</a
+              >
             </div>
+            <div class="w-1/2">
+              <a
+                href="/e-code/embed/html/2.html"
+                class="bg-indigo-500 text-white rounded-lg lg:px-8 px-5 py-2"
+                >Selanjutnya...</a
+              >
+            </div>
+          </div>
+        </div>
       </div>
     </main>
 
-    <div class="pt-24 pb-12 bg-zinc-950" data-aos="fade-up">
+    <!-- Code Mirror -->
+    <main
+      class="flex flex-col px-8 lg:flex-row lg:px-28 py-10 gap-8 mt-10 overflow-hidden"
+    >
+      <div class="w-full lg:w-full bg-white shadow-lg rounded-lg p-6">
+        <div class="editor-container">
+          <textarea id="code">
+// Silahkan ketikan ulang kode di dalam materi pada bagian ini</textarea
+          >
+        </div>
+
+        <!-- Run Button -->
+        <button
+          id="runCode"
+          class="button bg-indigo-500 text-white px-4 py-3 rounded-lg mt-3"
+        >
+          Run Code
+        </button>
+
+        <!-- Output Frame -->
+        <iframe
+          id="outputFrame"
+          class="w-full lg:w-full shadow-lg rounded-lg p-6"
+        ></iframe>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <div class="pt-24 pb-12 bg-zinc-950 " data-aos="fade-up">
       <div class="container">
         <div class="flex flex-wrap ml-10">
           <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
@@ -126,7 +183,7 @@
             <p class="text-sm">
               Sebuah platform pembelajaran online yang dirancang dengan baik
               untuk memastikan setiap orang bisa belajar bahasa pemograman
-              secara efektif,kapan pun, di mana pun mereka mau.
+              secara efektif, kapan pun, di mana pun mereka mau.
             </p>
           </div>
           <div class="w-full px-4 mb-12 md:w-1/3">
@@ -138,25 +195,22 @@
                 <a
                   href="/index.html"
                   class="inline-block text-base hover:text-primary mb-3"
+                  >Home</a
                 >
-                  Home
-                </a>
               </li>
               <li>
                 <a
                   href="/e-learning.html"
                   class="inline-block text-base hover:text-primary mb-3"
+                  >E-learning</a
                 >
-                  E-learning
-                </a>
               </li>
               <li>
                 <a
                   href="/contact.html"
                   class="inline-block text-base hover:text-primary mb-3"
+                  >Contact</a
                 >
-                  Contact
-                </a>
               </li>
             </ul>
           </div>
@@ -167,25 +221,22 @@
                 <a
                   href="#"
                   class="inline-block text-base hover:text-primary mb-3"
+                  >Instagram</a
                 >
-                  Instagram
-                </a>
               </li>
               <li>
                 <a
                   href="#"
                   class="inline-block text-base hover:text-primary mb-3"
+                  >Tiktok</a
                 >
-                  Tiktok
-                </a>
               </li>
               <li>
                 <a
                   href="#"
                   class="inline-block text-base hover:text-primary mb-3"
+                  >Youtube</a
                 >
-                  Youtube
-                </a>
               </li>
             </ul>
           </div>
@@ -193,17 +244,17 @@
 
         <p class="font-medium text-xs text-slate-500 text-center">
           Dibuat Dengan <span class="text-pink-500">❤️</span>
-          <a href="#" target="_blank" class="font-bold text-primary">
-            Oleh Team TI-01 (B)
-          </a>
-          , Menggunakan
-          <a href="#" target="_blank" class="font-bold text-primary">
-            Tailwind Css</a
+          <a href="#" target="_blank" class="font-bold text-primary"
+            >Oleh Team TI-01 (B)</a
+          >, Menggunakan
+          <a href="#" target="_blank" class="font-bold text-primary"
+            >Tailwind Css</a
           >
         </p>
       </div>
     </div>
 
+    <!-- Scripts -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script
       src="https://code.jquery.com/jquery-3.7.1.slim.js"
@@ -211,6 +262,10 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.10/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.10/mode/htmlmixed/htmlmixed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.10/mode/javascript/javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.10/mode/css/css.min.js"></script>
     <script>
       AOS.init();
     </script>
@@ -225,6 +280,32 @@
           },
         },
       };
+
+      // Initialize CodeMirror
+      document.addEventListener("DOMContentLoaded", function () {
+        const editor = CodeMirror.fromTextArea(
+          document.getElementById("code"),
+          {
+            mode: "htmlmixed",
+            theme: "dracula",
+            lineNumbers: true,
+            tabSize: 1,
+            autoCloseBrackets: true,
+          }
+        );
+
+        document
+          .getElementById("runCode")
+          .addEventListener("click", function () {
+            const outputFrame = document.getElementById("outputFrame");
+            const code = editor.getValue();
+            const iframeDoc = outputFrame.contentDocument;
+
+            iframeDoc.open();
+            iframeDoc.write(code);
+            iframeDoc.close();
+          });
+      });
     </script>
   </body>
 </html>

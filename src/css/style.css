@@ -45,9 +45,16 @@ body {
 }
 
 .hamburger-icons.line-middle.active {
-  opacity: 0; 
+  opacity: 0;
 }
 
 .hamburger-icons.line-bottom.active {
-  transform: rotate(-45deg) translate(5px, -8px); 
+  transform: rotate(-45deg) translate(5px, -8px);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  padding: 20px;
 }

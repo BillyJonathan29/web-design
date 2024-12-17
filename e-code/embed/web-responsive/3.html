@@ -6,6 +6,14 @@
     <title>E-Code | Materi</title>
     <link rel="stylesheet" href="/src/css/style.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.10/codemirror.min.css"
+   />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.10/theme/dracula.min.css"
+    />
   </head>
   <body class="bg-gray-100 font-sans">
      <!-- Navbar -->
@@ -209,6 +217,10 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.10/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.10/mode/htmlmixed/htmlmixed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.10/mode/javascript/javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.10/mode/css/css.min.js"></script>
     <script>
       AOS.init();
     </script>
@@ -223,6 +235,33 @@
           },
         },
       };
+
+
+        // Initialize CodeMirror
+        document.addEventListener("DOMContentLoaded", function () {
+        const editor = CodeMirror.fromTextArea(
+          document.getElementById("code"),
+          {
+            mode: "htmlmixed",
+            theme: "dracula",
+            lineNumbers: true,
+            tabSize: 1,
+            autoCloseBrackets: true,
+          }
+        );
+
+        document
+          .getElementById("runCode")
+          .addEventListener("click", function () {
+            const outputFrame = document.getElementById("outputFrame");
+            const code = editor.getValue();
+            const iframeDoc = outputFrame.contentDocument;
+
+            iframeDoc.open();
+            iframeDoc.write(code);
+            iframeDoc.close();
+          });
+      });
     </script>
   </body>
 </html>

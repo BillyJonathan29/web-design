@@ -28,7 +28,7 @@
                 name="hamburger"
                 type="button"
                 class="block absolute right-2 lg:hidden"
-              >
+              data-aos="fade-left">
                 <span class="hamburger-icons line-top"></span>
                 <span class="hamburger-icons line-middle"></span>
                 <span class="hamburger-icons line-bottom"></span>
@@ -41,8 +41,9 @@
                 <ul class="block lg:flex">
                   <li class="group">
                     <a
+                    
                       href="/index.html"
-                      class="text-base text-dark py-2 mx-8 group-hover:text-primary flex"
+                      class="text-base text-dark py-2 mx-8 group-hover:text-primary flex text-zinc-800 after:content-[''] after:bottom-0 after:h-[5px] after:bg-indigo-500 after:absolute after:rounded-full relative pb-2 hover:after:w-[5px] active:after:w-[15px] after:transition-all after:duration-500 after:left-1/2 after:-translate-x-1/2 after:w-full after:left-0 after:right-0 after:transition-all after:duration-500"
                       >Home</a
                     >
                   </li>
@@ -211,7 +212,7 @@
     </div>
 
     <!-- Footer -->
-    <div class="pt-24 pb-12 bg-zinc-950" data-aos="fade-up">
+    <div class="pt-24 pb-12 bg-zinc-950 overflow-hidden" data-aos="fade-up">
       <div class="container">
         <div class="flex flex-wrap ml-10">
           <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
