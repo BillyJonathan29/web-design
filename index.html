@@ -7,6 +7,15 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
 
+  <style>
+    .notFound {
+      display: flex; /* Mengaktifkan flex untuk #materi-container */
+      justify-content: center; /* Menengahkan konten secara horizontal */
+      align-items: center; /* Menengahkan konten secara vertikal */
+      height: 100%; /* Pastikan tinggi elemen sesuai kebutuhan */
+      min-height: 200px; /* Untuk memastikan area terlihat walaupun kosong */
+    }
+  </style>
   <body>
     <!-- Navbar -->
     <div class="lg:mx-28">
@@ -80,15 +89,16 @@
           <p
             class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto sm:text-xl md:text-2xl"
           >
-            From quick, practical courses to comprehensive certifications, learn
-            everything you need to know about the most sought-after business
-            skills.
+            Mulai dari kursus coding praktis,
+            kuasai keterampilan yang Anda butuhkan untuk unggul di dunia
+            pemrograman yang terus berkembang dan wujudkan potensi terbaik Anda
+            di bidang teknologi.
           </p>
           <a
             href="#signup"
             class="mt-8 inline-block bg-blue-600 text-white text-xl font-bold py-3 px-8 rounded-full hover:bg-blue-500 transition duration-300"
           >
-            Sign up for free courses
+            Learn More
           </a>
 
           <!-- Features -->
@@ -117,36 +127,64 @@
         class="text-2xl lg:text-3xl font-bold text-gray-800 text-center mb-12"
         data-aos="fade-up"
       >
-        Berbagai Program <span class="text-indigo-500">Byte</span>Force
+        Berbagai Materi Di Byte Force
       </h2>
 
       <div class="text-center mb-5">
         <button
-          class="btn-materi bg-blue-500 text-white px-4 py-2 rounded mr-2"
+          class="btn-materi bg-orange-500 text-white px-4 py-2 rounded mr-2"
           data-materi="materi1"
         >
-          Materi 1
+          HTML 5
         </button>
         <button
-          class="btn-materi bg-green-500 text-white px-4 py-2 rounded mr-2"
+          class="btn-materi bg-blue-500 text-white px-4 py-2 rounded mr-2"
           data-materi="materi2"
         >
-          Materi 2
+          CSS
+        </button>
+        <button
+          class="btn-materi bg-yellow-500 text-white px-4 py-2 rounded"
+          data-materi="materi3"
+        >
+          JAVASCRIPT
+        </button>
+        <button
+          class="btn-materi bg-indigo-500 text-white px-4 py-2 rounded"
+          data-materi="materi4"
+        >
+          Web Responsive
         </button>
         <button
           class="btn-materi bg-red-500 text-white px-4 py-2 rounded"
           data-materi="materi3"
         >
-          Materi 3
+          Laravel
+        </button>
+        <button
+          class="btn-materi bg-purple-500 text-white px-4 py-2 rounded"
+          data-materi="materi3"
+        >
+          PHP
+        </button>
+        <button
+          class="btn-materi bg-blue-300 text-white px-4 py-2 rounded"
+          data-materi="materi3"
+        >
+          React
+        </button>
+        <button
+          class="btn-materi bg-green-500 text-white px-4 py-2 rounded"
+          data-materi="materi3"
+        >
+          Node js
         </button>
       </div>
 
       <div
         id="materi-container"
         class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
-      >
-        <!-- Cards akan dimasukkan dinamis oleh script -->
-      </div>
+      ></div>
     </div>
     <!-- Content End -->
 
@@ -158,9 +196,7 @@
       <div class="container">
         <div class="flex flex-wrap ml-10">
           <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
-            <h2 class="font-bold text-4xl text-white mb-5">
-              <span class="font-bold text-indigo-500">E-</span>Code
-            </h2>
+            <h2 class="font-bold text-4xl text-white mb-5">ByteForce</h2>
             <h3 class="font-bold text-xl mb-2">Tentang Kami</h3>
             <p class="text-sm">
               Sebuah platform pembelajaran online yang dirancang dengan baik
@@ -178,13 +214,6 @@
                   href="/index.html"
                   class="inline-block text-base hover:text-primary mb-3"
                   >Home</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/e-learning.html"
-                  class="inline-block text-base hover:text-primary mb-3"
-                  >E-learning</a
                 >
               </li>
               <li>
@@ -253,95 +282,72 @@
       const materiData = {
         materi1: [
           {
-            title: "HTML Basic",
+            title: "Perkenalan HTML",
             description:
               "HTML (HyperText Markup Language) adalah bahasa markup, bukan bahasa pemrograman.",
-            image: "/assets/img/head-laptop.png",
+            image: "/assets/img/html.png",
             link: "/e-code/html/1.html",
           },
           {
             title: "Install Kode Editor",
             description:
-              "Pada video kali ini kita bakal mulai untuk menginstall code editor. Untuk saat ini kita akan bareng bareng untuk menginstall code editor Sublime Text.",
-            image: "/assets/img/head-laptop.png",
+              "Pada video kali ini kita bakal mulai untuk menginstall code editor.",
+            image: "/assets/img/html.png",
             link: "/e-code/html/2.html",
           },
           {
-            title: "Perkenalan HTML",
+            title: "Basic Template",
             description:
-              "Pada materi kali ini kita cuman akan mulai berkenalan dengan HTML. Dimulai dari Apa itu HTML?",
-            image: "/assets/img/head-laptop.png",
+              "Basic template HTML adalah kerangka dasar untuk membuat halaman web",
+            image: "/assets/img/html.png",
             link: "/e-code/html/3.html",
           },
           {
-            title: "Basic Template",
+            title: "Heading HTML",
             description:
-              "Tentunya basic template HTML ini sangat dibutuhkan. Mungkin secara visual tanpa menggunakan Basic Template pun sama saja hasilnya ketika tidak menggunakan Basic Template itu.",
-            image: "/assets/img/head-laptop.png",
-            link: "/e-code/html/1.html",
+              "Heading di HTML digunakan untuk memberi struktur pada konten halaman web.",
+            image: "/assets/img/html.png",
+            link: "/e-code/html/4.html",
           },
           {
-            title: "Basic Template",
+            title: "List HTML",
             description:
-              "Tentunya basic template HTML ini sangat dibutuhkan. Mungkin secara visual tanpa menggunakan Basic Template pun sama saja hasilnya ketika tidak menggunakan Basic Template itu.",
-            image: "/assets/img/head-laptop.png",
-            link: "/e-code/html/1.html",
+              "List adalah elemen HTML yang digunakan untuk menyusun informasi dalam bentuk daftar",
+            image: "/assets/img/html.png",
+            link: "/e-code/html/5.html",
           },
-
           {
-            title: "Basic Template",
+            title: "Tag img HTML",
             description:
-              "Tentunya basic template HTML ini sangat dibutuhkan. Mungkin secara visual tanpa menggunakan Basic Template pun sama saja hasilnya ketika tidak menggunakan Basic Template itu.",
-            image: "/assets/img/head-laptop.png",
-            link: "/e-code/html/1.html",
+              "Tag <img> digunakan untuk menampilkan gambar di halaman web.",
+            image: "/assets/img/html.png",
+            link: "/e-code/html/6.html",
           },
         ],
         materi2: [
           {
-            title: "Basic Template",
+            title: "Perkenalan CSS",
             description:
-              "Tentunya basic template HTML ini sangat dibutuhkan. Mungkin secara visual tanpa menggunakan Basic Template pun sama saja hasilnya ketika tidak menggunakan Basic Template itu.",
-            image: "/assets/img/head-laptop.png",
+              "CSS (Cascading Style Sheets) adalah bahasa untuk mendeskripsikan tampilan atau presentasi halaman web yang ditulis dengan HTML atau XML.",
+            image: "/assets/img/py.png",
+            link: "/e-code/css/1.html",
+          },
+          {
+            title: "CSS Layouting",
+            description:
+              "CSS (Cascading Style Sheets) adalah bahasa untuk mendeskripsikan tampilan atau presentasi halaman web yang ditulis dengan HTML atau XML.",
+            image: "/assets/img/py.png",
             link: "/e-code/html/1.html",
           },
           {
-            title: "Basic Template",
+            title: "CSS GRID",
             description:
-              "Tentunya basic template HTML ini sangat dibutuhkan. Mungkin secara visual tanpa menggunakan Basic Template pun sama saja hasilnya ketika tidak menggunakan Basic Template itu.",
-            image: "/assets/img/head-laptop.png",
-            link: "/e-code/html/1.html",
-          },
-          {
-            title: "Basic Template",
-            description:
-              "Tentunya basic template HTML ini sangat dibutuhkan. Mungkin secara visual tanpa menggunakan Basic Template pun sama saja hasilnya ketika tidak menggunakan Basic Template itu.",
-            image: "/assets/img/head-laptop.png",
+              "CSS (Cascading Style Sheets) adalah bahasa untuk mendeskripsikan tampilan atau presentasi halaman web yang ditulis dengan HTML atau XML.",
+            image: "/assets/img/py.png",
             link: "/e-code/html/1.html",
           },
         ],
-        materi3: [
-         {
-            title: "Basic Template",
-            description:
-              "Tentunya basic template HTML ini sangat dibutuhkan. Mungkin secara visual tanpa menggunakan Basic Template pun sama saja hasilnya ketika tidak menggunakan Basic Template itu.",
-            image: "/assets/img/head-laptop.png",
-            link: "/e-code/html/1.html",
-          },
-         {
-            title: "Basic Template",
-            description:
-              "Tentunya basic template HTML ini sangat dibutuhkan. Mungkin secara visual tanpa menggunakan Basic Template pun sama saja hasilnya ketika tidak menggunakan Basic Template itu.",
-            image: "/assets/img/head-laptop.png",
-            link: "/e-code/html/1.html",
-          },
-         {
-            title: "Basic Template",
-            description:
-              "Tentunya basic template HTML ini sangat dibutuhkan. Mungkin secara visual tanpa menggunakan Basic Template pun sama saja hasilnya ketika tidak menggunakan Basic Template itu.",
-            image: "/assets/img/head-laptop.png",
-            link: "/e-code/html/1.html",
-          },
-        ],
+        materi3: [],
       };
 
       $(document).ready(function () {
@@ -351,17 +357,27 @@
 
           $("#materi-container").empty(); // Empty the container before adding new materials
 
-          materiList.forEach((materi) => {
+          if (materiList.length > 0) {
+            materiList.forEach((materi) => {
+              $("#materi-container").append(`
+                <a href="${materi.link}" class="flex" data-aos="zoom-in">
+                  <div class="bg-white shadow-md rounded-lg p-4 h-full flex flex-col justify-center items-center">
+                    <img src="${materi.image}" alt="${materi.title}" class="rounded-lg w-1/2 h-40 object-cover mb-4">
+                    <h3 class="font-bold text-lg text-center">${materi.title}</h3>
+                    <p class="text-gray-600 mt-2 px-10 text-sm text-center">${materi.description}</p>
+                  </div>
+                </a>
+              `);
+            });
+          } else {
             $("#materi-container").append(`
-          <a href="${materi.link}" class="flex" data-aos="zoom-in">
-            <div class="bg-white shadow-md rounded-lg p-4 h-full">
-              <img src="${materi.image}" alt="${materi.title}" class="rounded-lg w-full h-40 object-cover mb-4">
-              <h3 class="font-bold text-lg text-center">${materi.title}</h3>
-              <p class="text-gray-600 mt-2 text-sm">${materi.description}</p>
-            </div>
-          </a>
-        `);
-          });
+              <center>
+                <div class="flex justify-center items-center text-gray-500 py-4 h-full">
+                  <p class="text-xl">Materi belum tersedia</p>
+                </div>
+              </center>
+            `);
+          }
         };
 
         // Automatically load Materi 1 when the page loads
