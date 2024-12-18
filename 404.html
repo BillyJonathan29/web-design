@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Page Not Found</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex items-center justify-center h-screen bg-gray-100">
+  <div class="text-center">
+    <h1 class="text-9xl font-extrabold text-indigo-600">404</h1>
+    <p class="text-2xl font-medium text-gray-700 mt-4">Oops! Page Not Found</p>
+    <p class="text-gray-500 mt-2">The page you are looking for does not exist.</p>
+    <a href="/" class="inline-block mt-6 px-6 py-3 text-white bg-indigo-600 rounded-lg hover:bg-blue-700 transition">
+      Go Back Home
+    </a>
+  </div>
+
+  <script>
+    // Menambahkan event listener untuk tombol "Go Back Home"
+    const button = document.querySelector('a');
+    button.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.location.href = '/'; // Redirect ke halaman utama
+    });
+  </script>
+</body>
+</html>
