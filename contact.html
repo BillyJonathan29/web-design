@@ -10,26 +10,25 @@
     <!-- Navbar -->
     <div class="lg:mx-28">
       <header
-        class="bg-transparent left-0 lg:px-20 px-2 top-0 w-full flex items-center z-50 fixed"
+        class="bg-transparent left-0 lg:px-20 px-4 top-0 w-full flex items-center z-50 fixed"
         data-aos="fade-down"
       >
-        <div class="container">
+        <div class="container mx-auto">
           <div class="flex items-center justify-between relative">
             <div class="px-2 lg:px-4">
               <a
                 href="/index.html"
-                class="font-bold lg:text-2xl text-2xl block py-6"
-              >
+                class="font-bold text-2xl block py-6 text-primary"
+                >
                 Byte Force
               </a>
             </div>
-
             <div class="flex items-center px-4">
               <button
                 id="hamburger"
+                name="hamburger"
                 type="button"
                 class="block absolute right-2 lg:hidden"
-                data-aos="fade-left"
               >
                 <span class="hamburger-icons line-top"></span>
                 <span class="hamburger-icons line-middle"></span>
@@ -44,18 +43,23 @@
                   <li class="group">
                     <a
                       href="/index.html"
-                      class="text-base text-dark py-2 mx-8 group-hover:text-primary flex"
+                      class="text-base text-dark py-2 mx-4 lg:mx-8 group-hover:text-primary flex"
+                      >Home</a
                     >
-                      Home
-                    </a>
+                  </li>
+                  <li class="group">
+                    <a
+                      href="/e-learning.html"
+                      class="text-base text-dark py-2 mx-4 lg:mx-8 group-hover:text-primary flex"
+                      >E-Learning</a
+                    >
                   </li>
                   <li class="group">
                     <a
                       href="/contact.html"
-                      class="text-base text-dark py-2 mx-8 group-hover:text-primary flex"
+                      class="text-base text-dark py-2 mx-4 lg:mx-8 group-hover:text-primary flex"
+                      >Contact</a
                     >
-                      Contact
-                    </a>
                   </li>
                 </ul>
               </nav>
@@ -64,27 +68,27 @@
         </div>
       </header>
     </div>
+    <!-- navbar end -->
 
     <section
       id="contact"
-      class="mt-28 flex justify-center pb-32"
+      class="mt-28 flex justify-center pb-32 px-4 sm:px-6 lg:px-0"
       data-os="fade-up"
     >
       <div
-        class="container bg-white shadow-lg rounded-lg w-[500px] justify-center"
+        class="container bg-white shadow-lg rounded-lg max-w-lg w-full px-6 py-8 sm:py-10 container mx-auto px-4 sm:px-6 md:px-8 lg:px-12"
+        
       >
-        <div class="w-full px-4">
-          <div class="max-w-xl mx-auto text-center">
-            <h4 class="font-bold my-4 text-4xl text-primary mb-6">Contact</h4>
-          </div>
+        <div class="w-full text-center mb-6">
+          <h4 class="font-bold text-4xl text-primary">Contact</h4>
         </div>
 
-        <hr />
+        <hr class="mb-8" />
 
         <form action="">
-          <div class="w-full lg:w-2/3 lg:mx-auto mt-2">
-            <div class="w-full px-4 mb-8">
-              <label for="name" class="text-base font-bold text-primary"
+          <div class="space-y-6">
+            <div>
+              <label for="name" class="text-base font-bold text-primary block mb-2"
                 >Nama</label
               >
               <input
@@ -93,8 +97,8 @@
                 class="w-full bg-slate-50 border-2 border-slate-300 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:border-primary focus:ring-1"
               />
             </div>
-            <div class="w-full px-4 mb-8">
-              <label for="email" class="text-base font-bold text-primary"
+            <div>
+              <label for="email" class="text-base font-bold text-primary block mb-2"
                 >Gmail</label
               >
               <input
@@ -103,17 +107,17 @@
                 class="w-full bg-slate-50 border-2 border-slate-300 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:border-primary focus:ring-1"
               />
             </div>
-            <div class="w-full px-4 mb-8">
-              <label for="message" class="text-base font-bold text-primary"
+            <div>
+              <label for="message" class="text-base font-bold text-primary block mb-2"
                 >Pesan</label
               >
               <textarea
-                type="message"
                 id="message"
-                class="w-full bg-slate-50 border-2 border-slate-300 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:border-primary focus:ring-1 hide-40"
+                rows="5"
+                class="w-full bg-slate-50 border-2 border-slate-300 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:border-primary focus:ring-1"
               ></textarea>
             </div>
-            <div class="w-full px-4 rounded-lg mb-6">
+            <div>
               <button
                 type="button"
                 class="text-base bg-indigo-500 font-semibold text-white rounded-full px-8 py-3 w-full hover:bg-indigo-600"
@@ -124,86 +128,72 @@
             </div>
           </div>
         </form>
-      </div>
+      </>
     </section>
 
     <!-- Footer -->
-    <div
-      class="pt-24 pb-12 bg-zinc-950 lg:flex lg:justify-center"
-      data-aos="fade-up"
-    >
-      <div class="container">
-        <div class="flex flex-wrap ml-10">
-          <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
-            <h2 class="font-bold text-4xl text-white mb-5">ByteForce</h2>
-            <h3 class="font-bold text-xl mb-2">Tentang Kami</h3>
+    <div class="pt-24 pb-12 bg-zinc-950" data-aos="fade-up">
+      <div class="container px-4 sm:px-6 lg:px-20">
+        <div class="flex flex-wrap gap-6 md:flex-nowrap">
+          <div class="w-full md:w-1/3 text-slate-300 font-medium">
+            <h2 class="font-bold text-4xl text-white mb-4">
+              <span class="text-indigo-500">E-</span>Code
+            </h2>
             <p class="text-sm">
               Sebuah platform pembelajaran online yang dirancang dengan baik
               untuk memastikan setiap orang bisa belajar bahasa pemrograman
               secara efektif, kapan pun, di mana pun mereka mau.
             </p>
           </div>
-          <div class="w-full px-4 mb-12 md:w-1/3">
-            <h3 class="font-semibold text-slate-300 mb-5 text-xl">
-              Fitur Kami
-            </h3>
-            <ul class="text-slate-300 text-sm">
+          <div class="w-full md:w-1/3">
+            <h3 class="font-semibold text-xl text-white mb-4">Fitur Kami</h3>
+            <ul class="text-slate-300 space-y-2">
               <li>
                 <a
                   href="/index.html"
-                  class="inline-block text-base hover:text-primary mb-3"
-                  >Home</a
+                  class="hover:text-primary"
+                >
+                  Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/e-learning.html"
+                  class="hover:text-primary"
+                >
+                  E-Learning</a
                 >
               </li>
               <li>
                 <a
                   href="/contact.html"
-                  class="inline-block text-base hover:text-primary mb-3"
-                  >Contact</a
+                  class="hover:text-primary"
+                >
+                  Contact</a
                 >
               </li>
             </ul>
           </div>
-          <div class="w-full px-4 mb-12 md:w-1/3">
-            <h3 class="font-semibold text-white mb-5 text-xl">Media Social</h3>
-            <ul class="text-slate-300 text-sm">
+          <div class="w-full md:w-1/3">
+            <h3 class="font-semibold text-xl text-white mb-4">Media Sosial</h3>
+            <ul class="text-slate-300 space-y-2">
               <li>
-                <a
-                  href="#"
-                  class="inline-block text-base hover:text-primary mb-3"
-                  >Instagram</a
-                >
+                <a href="#" class="hover:text-primary">Instagram</a>
               </li>
               <li>
-                <a
-                  href="#"
-                  class="inline-block text-base hover:text-primary mb-3"
-                  >Tiktok</a
-                >
+                <a href="#" class="hover:text-primary">Tiktok</a>
               </li>
               <li>
-                <a
-                  href="#"
-                  class="inline-block text-base hover:text-primary mb-3"
-                  >Youtube</a
-                >
+                <a href="#" class="hover:text-primary">YouTube</a>
               </li>
             </ul>
           </div>
         </div>
-
-        <p class="font-medium text-xs text-slate-500 text-center">
-          Dibuat Dengan <span class="text-pink-500">❤️</span>
-          <a href="#" target="_blank" class="font-bold text-primary"
-            >Oleh Team TI-01 (B)</a
-          >, Menggunakan
-          <a href="#" target="_blank" class="font-bold text-primary"
-            >Tailwind CSS</a
-          >
+        <p class="text-xs text-slate-500 text-center mt-8">
+          Dibuat Dengan <span class="text-pink-500">&#x2764;</span> oleh Team TI-01 (B), Menggunakan <span class="text-primary">Tailwind CSS</span>
         </p>
       </div>
     </div>
-    <!-- Footer End -->
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script
