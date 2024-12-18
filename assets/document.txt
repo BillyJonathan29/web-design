@@ -1,0 +1,47 @@
+
+
+
+
+
+
+
+Basic Template
+	
+
+
+
+
+
+
+
+
+
+
+HTML Lanjutan
+
+  HTML tingkat lanjut merujuk pada fitur dan teknik dalam HTML
+  yang lebih kompleks dan ....
+
+
+
+CSS Basic
+
+ Apa itu CSS? CSS adalah singkatan dari Cascading Style Sheets .
+ CSS menjelaskan tentang ....
+
+
+
+CSS Layouting
+Tata letak grid CSS adalah sistem tata letak dua dimensi untuk
+web . Sistem ini memungkinkan Anda.....
+
+
+
+ CSS Zero To Hero
+CSS Zero to Hero" mengajarkan dasar hingga mahir CSS, mulai dari
+                selektor, tata letak, hingga animasi, untuk membuat ...
+
+ Web Responsive
+   Responsive Web adalah teknik desain web yang membuat tampilan
+                situs menyesuaikan berbagai ukuran layar, dari desktop hingga
+                ...

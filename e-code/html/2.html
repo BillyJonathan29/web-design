@@ -1,12 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Byte Force</title>
     <link rel="stylesheet" href="/src/css/style.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.10/codemirror.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.10/theme/dracula.min.css"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <style>
+      /* Optional styling for the editor container */
+      .editor-container {
+        width: 100%;
+        margin: 20px auto;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      iframe {
+        width: 100%;
+        height: 300px;
+        border: 1px solid #ccc;
+        margin-top: 20px;
+      }
+    </style>
   </head>
-  <body>
+
+  <body class="bg-gray-100 font-sans">
     <!-- Navbar -->
     <div class="lg:mx-28">
       <header
@@ -19,8 +51,7 @@
               <a
                 href="/index.html"
                 class="font-bold lg:text-2xl text-2xl block py-6"
-                ><span class="text-indigo-500">E-</span>Code</a
-              >
+              >Byte Force</a>
             </div>
             <div class="flex items-center px-4">
               <button
@@ -46,13 +77,7 @@
                       >Home</a
                     >
                   </li>
-                  <li class="group">
-                    <a
-                      href="/e-learning.html"
-                      class="text-base text-dark py-2 mx-8 group-hover:text-primary flex"
-                      >E-Learning</a
-                    >
-                  </li>
+
                   <li class="group">
                     <a
                       href="/contact.html"
@@ -67,119 +92,53 @@
         </div>
       </header>
     </div>
-    <!-- navbar end -->
-    <!-- Head -->
-    <div class="mt-20 lg:px-20 lg:mt-24">
-      <div class="bg-white max-h-content p-4 md:p-8">
-        <div class="w-full flex flex-col lg:flex-row items-center">
-          <div class="w-full text-center lg:text-left" data-aos="fade-right">
-            <h1
-              class="font-bold text-slate-800 text-lg md:text-2xl"
-              data-aos="fade-up"
-            >
-              Web Responsive
-            </h1>
-            <p class="text-base font-medium mt-2" data-aos="fade-up">
-              Web Responsive adalah pendekatan desain web yang bertujuan untuk
-              membuat tampilan situs dapat menyesuaikan secara otomatis dengan
-              berbagai ukuran layar dan perangkat, seperti komputer, tablet, dan
-              ponsel. Dengan desain responsif, pengguna dapat menikmati
-              pengalaman yang konsisten dan nyaman, tanpa perlu menggulir atau
-              memperbesar konten secara manual.
-            </p>
-            <div class="mt-10">
-              <a
-                href="/e-learning.html"
-                class="bg-indigo-500 text-white px-4 py-3 rounded-lg mt-3"
-                data-aos="fade-up"
-              >
-                Kembali
-              </a>
-            </div>
-          </div>
+    <!-- Navbar end -->
+
+    <!-- Main Content -->
+    <main
+      class="flex lg:mt-28 flex-col px-8 lg:flex-row lg:px-28 gap-8 mt-24 overflow-hidden"
+      data-aos="fade-up-right"
+    >
+      <!-- Video Section -->
+      <div class="w-full bg-white shadow-lg rounded-lg p-6">
+        <div class="lg:h-[px-400px] h-[300px] rounded-lg">
+          <iframe
+            class="w-full lg:h-[300px] h-[300px] rounded-lg"
+            src="https://www.youtube.com/embed/1WF50180LOU"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
         </div>
       </div>
-    </div>
-    <!-- End Head -->
+    </main>
 
-    <!-- Content -->
-    <div class="bg-gray-50 py-24 px-4 lg:px-28 overflow-hidden">
-      <h1
-        class="text-2xl md:text-3xl font-bold text-gray-800 text-center mb-8"
-        data-aos="fade-up"
-      >
-        Daftar Materi
-      </h1>
-      <div
-        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
-        data-aos="fade-right"
-      >
-        <a href="/e-code/embed/web-responsive/1.html">
-          <div
-            class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow"
-          >
-            <h2 class="text-lg font-semibold text-gray-800 text-center">
-              Intro
-            </h2>
-            <div class="mt-4 text-gray-600 text-sm">
-              <p>
-                Pada materi kali ini kita cuman akan mulai berkenalan dengan Web
-                Responsive".
-              </p>
-            </div>
-          </div>
-        </a>
-        <a href="/e-code/embed/web-responsive/2.html">
-          <div
-            class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow"
-            data-aos="fade-up"
-          >
-            <h2 class="text-lg font-semibold text-gray-800 text-center">
-              Media Query
-            </h2>
-            <div class="mt-4 text-gray-600 text-sm">
-              <p>
-                Media Query adalah fitur dalam CSS yang digunakan untuk
-                menerapkan aturan styling berdasarkan kondisi tertentu
-              </p>
-            </div>
-          </div>
-        </a>
-        <a href="/e-code/embed/web-responsive/3.html">
-          <div
-            class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow"
-            data-aos="fade-left"
-          >
-            <h2 class="text-lg font-semibold text-gray-800 text-center">
-              Flexbox
-            </h2>
-            <div class="mt-4 text-gray-600 text-sm">
-              <p>
-                Flexbox (singkatan dari Flexible Box) adalah model tata letak di
-                CSS yang dirancang untuk mengatur elemen secara efisien di dalam
-                sebuah container,
-              </p>
-            </div>
-          </div>
-        </a>
-        <a href="/e-code/embed/web-responsive/4.html">
-          <div
-            class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow"
-            data-aos="fade-left"
-          >
-            <h2 class="text-lg font-semibold text-gray-800 text-center">
-              Flex Container
-            </h2>
-            <div class="mt-4 text-gray-600 text-sm">
-              <p>
-                Flex Container adalah elemen induk (parent) dalam model layout
-                Flexbox di CSS yang digunakan.....
-              </p>
-            </div>
-          </div>
-        </a>
+    <!-- Code Mirror -->
+    <main
+      class="flex flex-col px-8 lg:flex-row lg:px-28 py-10 gap-8 overflow-hidden"
+      data-aos="zoom-in"
+    >
+      <div class="w-full lg:w-full bg-white shadow-lg rounded-lg p-6">
+        <div class="editor-container">
+          <textarea id="code">Praktikan Di sini</textarea>
+        </div>
+
+        <!-- Run Button -->
+        <button
+          id="runCode"
+          class="button bg-indigo-500 text-white px-4 py-3 rounded-lg mt-3"
+        >
+          Run Code
+        </button>
+
+        <!-- Output Frame -->
+        <iframe
+          id="outputFrame"
+          class="w-full lg:w-full shadow-lg rounded-lg p-6"
+        ></iframe>
       </div>
-    </div>
+    </main>
 
     <!-- Footer -->
     <div class="pt-24 pb-12 bg-zinc-950" data-aos="fade-up">
@@ -193,7 +152,7 @@
             <p class="text-sm">
               Sebuah platform pembelajaran online yang dirancang dengan baik
               untuk memastikan setiap orang bisa belajar bahasa pemograman
-              secara efektif,kapan pun, di mana pun mereka mau.
+              secara efektif, kapan pun, di mana pun mereka mau.
             </p>
           </div>
           <div class="w-full px-4 mb-12 md:w-1/3">
@@ -205,25 +164,22 @@
                 <a
                   href="/index.html"
                   class="inline-block text-base hover:text-primary mb-3"
+                  >Home</a
                 >
-                  Home
-                </a>
               </li>
               <li>
                 <a
                   href="/e-learning.html"
                   class="inline-block text-base hover:text-primary mb-3"
+                  >E-learning</a
                 >
-                  E-learning
-                </a>
               </li>
               <li>
                 <a
                   href="/contact.html"
                   class="inline-block text-base hover:text-primary mb-3"
+                  >Contact</a
                 >
-                  Contact
-                </a>
               </li>
             </ul>
           </div>
@@ -234,25 +190,22 @@
                 <a
                   href="#"
                   class="inline-block text-base hover:text-primary mb-3"
+                  >Instagram</a
                 >
-                  Instagram
-                </a>
               </li>
               <li>
                 <a
                   href="#"
                   class="inline-block text-base hover:text-primary mb-3"
+                  >Tiktok</a
                 >
-                  Tiktok
-                </a>
               </li>
               <li>
                 <a
                   href="#"
                   class="inline-block text-base hover:text-primary mb-3"
+                  >Youtube</a
                 >
-                  Youtube
-                </a>
               </li>
             </ul>
           </div>
@@ -260,17 +213,17 @@
 
         <p class="font-medium text-xs text-slate-500 text-center">
           Dibuat Dengan <span class="text-pink-500">❤️</span>
-          <a href="#" target="_blank" class="font-bold text-primary">
-            Oleh Team TI-01 (B)
-          </a>
-          , Menggunakan
-          <a href="#" target="_blank" class="font-bold text-primary">
-            Tailwind Css</a
+          <a href="#" target="_blank" class="font-bold text-primary"
+            >Oleh Team TI-01 (B)</a
+          >, Menggunakan
+          <a href="#" target="_blank" class="font-bold text-primary"
+            >Tailwind Css</a
           >
         </p>
       </div>
     </div>
 
+    <!-- Scripts -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script
       src="https://code.jquery.com/jquery-3.7.1.slim.js"
@@ -278,6 +231,10 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.10/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.10/mode/htmlmixed/htmlmixed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.10/mode/javascript/javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.10/mode/css/css.min.js"></script>
     <script>
       AOS.init();
     </script>
@@ -292,6 +249,32 @@
           },
         },
       };
+
+      // Initialize CodeMirror
+      document.addEventListener("DOMContentLoaded", function () {
+        const editor = CodeMirror.fromTextArea(
+          document.getElementById("code"),
+          {
+            mode: "htmlmixed",
+            theme: "dracula",
+            lineNumbers: true,
+            tabSize: 1,
+            autoCloseBrackets: true,
+          }
+        );
+
+        document
+          .getElementById("runCode")
+          .addEventListener("click", function () {
+            const outputFrame = document.getElementById("outputFrame");
+            const code = editor.getValue();
+            const iframeDoc = outputFrame.contentDocument;
+
+            iframeDoc.open();
+            iframeDoc.write(code);
+            iframeDoc.close();
+          });
+      });
     </script>
   </body>
 </html>

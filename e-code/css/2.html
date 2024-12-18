@@ -3,89 +3,108 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>E-Code | Materi</title>
+    <title>Byte Force</title>
     <link rel="stylesheet" href="/src/css/style.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.10/codemirror.min.css"
-   />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.10/codemirror.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.10/theme/dracula.min.css"
     />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <style>
+      /* Optional styling for the editor container */
+      .editor-container {
+        width: 100%;
+        margin: 20px auto;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      iframe {
+        width: 100%;
+        height: 300px;
+        border: 1px solid #ccc;
+        margin-top: 20px;
+      }
+    </style>
   </head>
+
   <body class="bg-gray-100 font-sans">
-       <!-- Navbar -->
-       <div class="lg:mx-28">
-        <header
-          class="bg-transparent left-0 lg:px-20 px-2 top-0 w-full flex items-center z-50 fixed"
-          data-aos="fade-down"
-        >
-          <div class="container">
-            <div class="flex items-center justify-between relative">
-              <div class="px-2 lg:px-4">
-                <a
-                  href="/index.html"
-                  class="font-bold lg:text-2xl text-2xl block py-6"
-                  ><span class="text-indigo-500">E-</span>Code</a
-                >
-              </div>
-              <div class="flex items-center px-4">
-                <button
-                  id="hamburger"
-                  name="hamburger"
-                  type="button"
-                  class="block absolute right-2 lg:hidden"
-                >
-                  <span class="hamburger-icons line-top"></span>
-                  <span class="hamburger-icons line-middle"></span>
-                  <span class="hamburger-icons line-bottom"></span>
-                </button>
-  
-                <nav
-                  id="nav-menu"
-                  class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none"
-                >
-                  <ul class="block lg:flex">
-                    <li class="group">
-                      <a
-                        href="/index.html"
-                        class="text-base text-dark py-2 mx-8 group-hover:text-primary flex"
-                        >Home</a
-                      >
-                    </li>
-                    <li class="group">
-                      <a
-                        href="/e-learning.html"
-                        class="text-base text-dark py-2 mx-8 group-hover:text-primary flex"
-                        >E-Learning</a
-                      >
-                    </li>
-                    <li class="group">
-                      <a
-                        href="/contact.html"
-                        class="text-base text-dark py-2 mx-8 group-hover:text-primary flex"
-                        >Contact</a
-                      >
-                    </li>
-                  </ul>
-                </nav>
-              </div>
+    <!-- Navbar -->
+    <div class="lg:mx-28">
+      <header
+        class="bg-transparent left-0 lg:px-20 px-2 top-0 w-full flex items-center z-50 fixed"
+        data-aos="fade-down"
+      >
+        <div class="container">
+          <div class="flex items-center justify-between relative">
+            <div class="px-2 lg:px-4">
+              <a
+                href="/index.html"
+                class="font-bold lg:text-2xl text-2xl block py-6"
+              >Byte Force</a>
+            </div>
+            <div class="flex items-center px-4">
+              <button
+                id="hamburger"
+                name="hamburger"
+                type="button"
+                class="block absolute right-2 lg:hidden"
+              >
+                <span class="hamburger-icons line-top"></span>
+                <span class="hamburger-icons line-middle"></span>
+                <span class="hamburger-icons line-bottom"></span>
+              </button>
+
+              <nav
+                id="nav-menu"
+                class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none"
+              >
+                <ul class="block lg:flex">
+                  <li class="group">
+                    <a
+                      href="/index.html"
+                      class="text-base text-dark py-2 mx-8 group-hover:text-primary flex"
+                      >Home</a
+                    >
+                  </li>
+
+                  <li class="group">
+                    <a
+                      href="/contact.html"
+                      class="text-base text-dark py-2 mx-8 group-hover:text-primary flex"
+                      >Contact</a
+                    >
+                  </li>
+                </ul>
+              </nav>
             </div>
           </div>
-        </header>
-      </div>
-      <!-- navbar end -->
+        </div>
+      </header>
+    </div>
+    <!-- Navbar end -->
 
     <!-- Main Content -->
-    <main class="flex flex-col px-8 lg:mt-24 lg:flex-row mt-10 lg:px-28 py-10 gap-8 overflow-hidden"">
+    <main
+      class="flex lg:mt-28 flex-col px-8 lg:flex-row lg:px-28 gap-8 mt-24 overflow-hidden"
+      data-aos="fade-up-right"
+    >
       <!-- Video Section -->
-      <div class="w-full lg:w-2/3 bg-white shadow-lg rounded-lg p-6">
+      <div class="w-full bg-white shadow-lg rounded-lg p-6">
         <div class="lg:h-[px-400px] h-[300px] rounded-lg">
           <iframe
             class="w-full lg:h-[300px] h-[300px] rounded-lg"
-            src="https://www.youtube.com/embed/DzWsY-RPgXw"
+            src="https://www.youtube.com/embed/1WF50180LOU"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -93,35 +112,35 @@
           ></iframe>
         </div>
       </div>
+    </main>
 
-      <!-- Assignment Section -->
-      <div class="w-full lg:w-1/3 bg-white shadow-lg rounded-lg p-6">
-        <h2 class="text-xl font-semibold mb-6 text-gray-800">
-          Media Query
-        </h2>
-        <p class="text-sm text-gray-700">
-            Media Query adalah fitur dalam CSS yang digunakan untuk menerapkan aturan styling berdasarkan kondisi tertentu, seperti ukuran layar, resolusi, orientasi perangkat, atau jenis media (misalnya layar atau cetak). Media Query memungkinkan pengembang membuat desain web yang responsif, sehingga tampilan halaman web dapat menyesuaikan dengan berbagai perangkat dan ukuran layar..
-        </p>
-        <div class="mt-10">
-            <div class="flex items-start justify-end">
-              <div class="w-1/2">
-                <a
-                  href="/e-code//embed/web-responsive/2.html"
-                  class="bg-indigo-500 text-white rounded-lg lg:px-8 px-5 py-2"
-                  >Back...</a
-                >
-              </div>
-              <div class="w-1/2">
-                <a
-                  href="/e-code/embed/web-responsive/3.html"
-                  class="bg-indigo-500 text-white rounded-lg lg:px-8 px-5 py-2"
-                  >Selanjutnya...</a
-                >
-              </div>
-            </div>
+    <!-- Code Mirror -->
+    <main
+      class="flex flex-col px-8 lg:flex-row lg:px-28 py-10 gap-8 overflow-hidden"
+      data-aos="zoom-in"
+    >
+      <div class="w-full lg:w-full bg-white shadow-lg rounded-lg p-6">
+        <div class="editor-container">
+          <textarea id="code">Praktikan Di sini</textarea>
+        </div>
+
+        <!-- Run Button -->
+        <button
+          id="runCode"
+          class="button bg-indigo-500 text-white px-4 py-3 rounded-lg mt-3"
+        >
+          Run Code
+        </button>
+
+        <!-- Output Frame -->
+        <iframe
+          id="outputFrame"
+          class="w-full lg:w-full shadow-lg rounded-lg p-6"
+        ></iframe>
       </div>
     </main>
 
+    <!-- Footer -->
     <div class="pt-24 pb-12 bg-zinc-950" data-aos="fade-up">
       <div class="container">
         <div class="flex flex-wrap ml-10">
@@ -133,7 +152,7 @@
             <p class="text-sm">
               Sebuah platform pembelajaran online yang dirancang dengan baik
               untuk memastikan setiap orang bisa belajar bahasa pemograman
-              secara efektif,kapan pun, di mana pun mereka mau.
+              secara efektif, kapan pun, di mana pun mereka mau.
             </p>
           </div>
           <div class="w-full px-4 mb-12 md:w-1/3">
@@ -145,25 +164,22 @@
                 <a
                   href="/index.html"
                   class="inline-block text-base hover:text-primary mb-3"
+                  >Home</a
                 >
-                  Home
-                </a>
               </li>
               <li>
                 <a
                   href="/e-learning.html"
                   class="inline-block text-base hover:text-primary mb-3"
+                  >E-learning</a
                 >
-                  E-learning
-                </a>
               </li>
               <li>
                 <a
                   href="/contact.html"
                   class="inline-block text-base hover:text-primary mb-3"
+                  >Contact</a
                 >
-                  Contact
-                </a>
               </li>
             </ul>
           </div>
@@ -174,25 +190,22 @@
                 <a
                   href="#"
                   class="inline-block text-base hover:text-primary mb-3"
+                  >Instagram</a
                 >
-                  Instagram
-                </a>
               </li>
               <li>
                 <a
                   href="#"
                   class="inline-block text-base hover:text-primary mb-3"
+                  >Tiktok</a
                 >
-                  Tiktok
-                </a>
               </li>
               <li>
                 <a
                   href="#"
                   class="inline-block text-base hover:text-primary mb-3"
+                  >Youtube</a
                 >
-                  Youtube
-                </a>
               </li>
             </ul>
           </div>
@@ -200,17 +213,17 @@
 
         <p class="font-medium text-xs text-slate-500 text-center">
           Dibuat Dengan <span class="text-pink-500">❤️</span>
-          <a href="#" target="_blank" class="font-bold text-primary">
-            Oleh Team TI-01 (B)
-          </a>
-          , Menggunakan
-          <a href="#" target="_blank" class="font-bold text-primary">
-            Tailwind Css</a
+          <a href="#" target="_blank" class="font-bold text-primary"
+            >Oleh Team TI-01 (B)</a
+          >, Menggunakan
+          <a href="#" target="_blank" class="font-bold text-primary"
+            >Tailwind Css</a
           >
         </p>
       </div>
     </div>
 
+    <!-- Scripts -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script
       src="https://code.jquery.com/jquery-3.7.1.slim.js"
@@ -237,9 +250,8 @@
         },
       };
 
-
-        // Initialize CodeMirror
-        document.addEventListener("DOMContentLoaded", function () {
+      // Initialize CodeMirror
+      document.addEventListener("DOMContentLoaded", function () {
         const editor = CodeMirror.fromTextArea(
           document.getElementById("code"),
           {
