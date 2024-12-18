@@ -30,7 +30,7 @@ window.onscroll = function () {
   }
 };
 
-
+// mantapppppppp
 // Check if the URL path matches any known routes
 const validRoutes = [
   '/', 
