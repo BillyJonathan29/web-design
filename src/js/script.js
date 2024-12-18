@@ -50,6 +50,6 @@ const validRoutes = [
   '/e-code/html/6.html',
 ];
 if (!validRoutes.includes(window.location.pathname)) {
-  return window.location.href = '/404.html'; // Redirect to the 404 page
+  window.location.href = '/404.html'; // Redirect to the 404 page
 }
 
