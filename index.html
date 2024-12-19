@@ -185,6 +185,14 @@
         id="materi-container"
         class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
       ></div>
+      <div
+        id="materi-not"
+        class="hidden"
+      >
+      <div class="flex justify-center items-center text-gray-500 py-4 h-full" data-aos="zoom-in">
+        <p class="text-xl">Materi belum tersedia</p>
+      </div>
+    </div>
     </div>
     <!-- Content End -->
 
@@ -381,6 +389,7 @@
           $("#materi-container").empty(); // Empty the container before adding new materials
 
           if (materiList.length > 0) {
+            $("#materi-not").addClass('hidden')
             materiList.forEach((materi) => {
               $("#materi-container").append(`
                 <a href="${materi.link}" class="flex" data-aos="zoom-in">
@@ -392,14 +401,8 @@
                 </a>
               `);
             });
-          } else {
-            $("#materi-container").append(`
-              <center>
-                <div class="flex justify-center items-center text-gray-500 py-4 h-full" data-aos="zoom-in">
-                  <p class="text-xl">Materi belum tersedia</p>
-                </div>
-              </center>
-            `);
+          }else{
+            $("#materi-not").removeClass('hidden')
           }
         };
 
